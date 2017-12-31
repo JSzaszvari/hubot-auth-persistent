@@ -1,10 +1,11 @@
 # Hubot: hubot-auth
 
-### This is a fork that simply contains a PR missing from the main repo that makes hubot-auth save roles into the brain and actually persist across reboots instead of clearing them. Props to the original authors Alex Williams (http://github.com/aw), alexwilliamsca, tombell and the author of the PR/Fix Dario Berzano (https://github.com/dberzano)
+#### This is a fork that simply contains a PR missing from the main repo that makes hubot-auth save roles into the brain and actually persist across reboots instead of clearing them. Props to the original authors Alex Williams (http://github.com/aw), alexwilliamsca, tombell and the author of the PR/Fix Dario Berzano (https://github.com/dberzano)
+
+On NPM at: https://www.npmjs.com/package/hubot-auth-persistent
 
 Assign roles to users and restrict command access in other scripts.
 
-See [`src/auth.coffee`](src/auth.coffee) for full documentation.
 
 ## Installation
 
