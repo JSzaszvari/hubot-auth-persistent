@@ -1,7 +1,5 @@
 # Hubot: hubot-auth
 
-[![Build Status](https://travis-ci.org/hubot-scripts/hubot-auth.svg?branch=master)](https://travis-ci.org/hubot-scripts/hubot-auth)
-
 ### This is a fork that simply contains a PR missing from the main repo that makes hubot-auth save roles into the brain and actually persist across reboots instead of clearing them. Props to the original authors Alex Williams (http://github.com/aw), alexwilliamsca, tombell and the author of the PR/Fix Dario Berzano (https://github.com/dberzano)
 
 Assign roles to users and restrict command access in other scripts.
@@ -10,16 +8,16 @@ See [`src/auth.coffee`](src/auth.coffee) for full documentation.
 
 ## Installation
 
-Add **hubot-auth** to your `package.json` file:
+Add **hubot-auth-persistent** to your `package.json` file:
 
 ```
 npm install --save hubot-auth
 ```
 
-Add **hubot-auth** to your `external-scripts.json`:
+Add **hubot-auth-persistent** to your `external-scripts.json`:
 
 ```json
-["hubot-auth"]
+["hubot-auth-persistent"]
 ```
 
 Run `npm install`
