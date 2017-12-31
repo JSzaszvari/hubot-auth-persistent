@@ -11,7 +11,7 @@ See [`src/auth.coffee`](src/auth.coffee) for full documentation.
 Add **hubot-auth-persistent** to your `package.json` file:
 
 ```
-npm install --save hubot-auth
+npm install --save hubot-auth-persistent
 ```
 
 Add **hubot-auth-persistent** to your `external-scripts.json`:
