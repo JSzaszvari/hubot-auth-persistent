@@ -1,6 +1,8 @@
 # Hubot: hubot-auth
 
-#### This is a fork that simply contains a PR missing from the main repo that makes hubot-auth save roles into the brain and actually persist across reboots instead of clearing them.
+#### This is a fork that simply contains a merged PR missing from the main repo that makes hubot-auth save roles into the brain and actually persist across reboots instead of clearing them.
+
+(https://github.com/hubot-scripts/hubot-auth/pull/40) 
 
 #### Props to the original authors Alex Williams (http://github.com/aw), alexwilliamsca and tombell and especially the author of the PR/Fix Dario Berzano (https://github.com/dberzano)
 
