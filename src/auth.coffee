@@ -103,7 +103,7 @@ module.exports = (robot) ->
       for id in userIds.split ','
         robot.auth.addRole({ id }, roleName)
 
-  robot.respond /@?([^\s]+) ha(?:s|ve) (["'\w: -_]+) role/i, (msg) ->
+  robot.respond /@?([^\s]+) ha(?:s|ve)( the)? (["'\w: -_]+) role/i, (msg) ->
     name = msg.match[1].trim()
     if name.toLowerCase() is 'i' then name = msg.message.user.name
 
@@ -111,8 +111,8 @@ module.exports = (robot) ->
       unless robot.auth.isAdmin msg.message.user
         msg.reply "Sorry, only admins can assign roles."
       else
-        newRole = msg.match[2].trim().toLowerCase()
-
+        newRole = msg.match[3].trim().toLowerCase()
+        console.log(newRole);
         user = robot.brain.userForName(name)
         return msg.reply "#{name} does not exist" unless user?
 
@@ -124,7 +124,7 @@ module.exports = (robot) ->
           robot.auth.addRole user, newRole
           msg.reply "OK, #{name} has the '#{newRole}' role."
 
-  robot.respond /@?([^\s]+) (?:don['’]t|doesn['’]t|do not) have (["'\w: -_]+) role/i, (msg) ->
+  robot.respond /@?([^\s]+) (?:don['’]t|doesn['’]t|do not|doesnt|does not|dont) have (["'\w: -_]+) role/i, (msg) ->
     name = msg.match[1].trim()
     if name.toLowerCase() is 'i' then name = msg.message.user.name
 
